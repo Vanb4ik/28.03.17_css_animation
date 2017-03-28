@@ -1,0 +1,204 @@
+html
+{
+	font-family:Arial, sans-serif;
+	font-size: 18px;
+	height: 100%;
+}
+body
+{
+	margin:0;
+	height: 100%;
+}
+.Wrapper
+{
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+	min-height: 100%;
+	margin-bottom: -100px;
+}
+.Wrapper:after
+{
+	content:"";
+	height: 0;
+	font-size: 0;
+	display: block;
+	clear: both;
+}
+.Header
+{
+	background: #20ee56;
+	height: 100px;
+}
+.Logo
+{
+	width: 200px;
+	height: 100px;
+	float: left;
+}
+.LogoImages
+{
+	width: auto;
+	height: auto;
+	min-height: 100%;
+	min-width: 100%;
+}
+.Menyconteiner
+{
+	height: 100px;
+	background: red; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(red, yellow); /* Standard syntax */
+}
+.Meny
+{
+	margin-left: 200px;
+	height: 100%;
+	white-space: nowrap;
+	font-size: 0;
+}
+.Meny:before
+{
+	width: 0;
+	height: 100%;
+	content: "";
+	display: inline-block;
+	font-size: 0;
+	vertical-align: middle;
+}
+.MenyHeader 
+{
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0px;
+	text-align: justify;
+	white-space: normal;
+	vertical-align: middle;
+}
+.MenyHeader:after
+{
+	content: "";
+	display: inline-block;
+	width: 100%;
+	font-size: 0;
+	height: 0;
+}
+.Meny-iner
+{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+.Meny-item:hover >.Meny-iner
+{
+	display: block;
+}
+.Meny-iner> .Meny-item> .Meny-link
+{
+	width: 150px;
+}
+.Meny-item
+{
+	display: inline-block;
+	font-size: 18px;
+	position: relative;
+}
+.Meny-link
+{
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px 5px;
+	background: #f96;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 3px 3px 0 0 #298;
+
+	transition: background, box-shadow .3s,.3s;
+}
+.Meny-link:hover
+{
+	background: #4ba;
+	box-shadow: 0 3px 0 0 #298;
+}
+.Meny-link:active,
+.Meny-link:focus
+{
+	background: #289;
+	box-shadow:0 3px 0 0 #178;
+}
+.LeftSidebar
+{
+	float: left;
+	background: #a39;
+	width: 200px;
+	height: 200px;
+	clear: both;
+
+}
+.Menyconteiner2
+{
+	height: 100%;
+}
+.Meny2
+{
+	height: 100%;
+	white-space: nowrap;
+	font-size: 0;
+}
+.Meny2:before
+{
+	width: 0;
+	height: 100%;
+	content: "";
+	display: inline-block;
+	font-size: 0;
+	vertical-align: middle;
+}
+.alternate a 
+{
+  -webkit-animation: shake .7s linear alternate infinite;
+  animation: shake .7s linear alternate infinite;
+}
+@-webkit-keyframes shake 
+{
+  100% 
+  {
+    -webkit-transform: translateX(-30px);    
+  }
+}
+@keyframes shake {
+  100% {
+    transform: translateX(-30px);    
+  }
+}
+.seven:hover {
+  -o-transform: rotate(720deg);
+  -ms-transform: rotate(720deg);
+  -moz-transform: rotate(720deg);
+  -webkit-transform: rotate(720deg);
+  transform: rotate(720deg);
+}
+.Content
+{
+	padding-bottom: 100px;
+	margin-left: -300px;
+	display: block;
+}
+.Content p
+{
+	text-align: justify;
+}
+.Footer
+{
+	background: #ccc;
+	height: 100px;
+	clear: both;
+}
